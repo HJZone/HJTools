@@ -15,6 +15,7 @@
 		E278E1E11F20A93500CF5AC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E278E1DF1F20A93500CF5AC5 /* LaunchScreen.storyboard */; };
 		E278E1EC1F20A93500CF5AC5 /* HJToolsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E278E1EB1F20A93500CF5AC5 /* HJToolsTests.m */; };
 		E278E1F71F20A93500CF5AC5 /* HJToolsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E278E1F61F20A93500CF5AC5 /* HJToolsUITests.m */; };
+		E278E2061F20AAF300CF5AC5 /* UIFont+HJFont.m in Sources */ = {isa = PBXBuildFile; fileRef = E278E2051F20AAF300CF5AC5 /* UIFont+HJFont.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		E278E1F21F20A93500CF5AC5 /* HJToolsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HJToolsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E278E1F61F20A93500CF5AC5 /* HJToolsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HJToolsUITests.m; sourceTree = "<group>"; };
 		E278E1F81F20A93500CF5AC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E278E2041F20AAF300CF5AC5 /* UIFont+HJFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIFont+HJFont.h"; path = "HJFont/UIFont+HJFont.h"; sourceTree = "<group>"; };
+		E278E2051F20AAF300CF5AC5 /* UIFont+HJFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIFont+HJFont.m"; path = "HJFont/UIFont+HJFont.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,7 @@
 				E278E1D51F20A93500CF5AC5 /* AppDelegate.m */,
 				E278E1D71F20A93500CF5AC5 /* ViewController.h */,
 				E278E1D81F20A93500CF5AC5 /* ViewController.m */,
+				E278E2071F20AAF900CF5AC5 /* HJFont */,
 				E278E1DA1F20A93500CF5AC5 /* Main.storyboard */,
 				E278E1DD1F20A93500CF5AC5 /* Assets.xcassets */,
 				E278E1DF1F20A93500CF5AC5 /* LaunchScreen.storyboard */,
@@ -138,6 +142,15 @@
 				E278E1F81F20A93500CF5AC5 /* Info.plist */,
 			);
 			path = HJToolsUITests;
+			sourceTree = "<group>";
+		};
+		E278E2071F20AAF900CF5AC5 /* HJFont */ = {
+			isa = PBXGroup;
+			children = (
+				E278E2041F20AAF300CF5AC5 /* UIFont+HJFont.h */,
+				E278E2051F20AAF300CF5AC5 /* UIFont+HJFont.m */,
+			);
+			name = HJFont;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,6 +292,7 @@
 				E278E1D91F20A93500CF5AC5 /* ViewController.m in Sources */,
 				E278E1D61F20A93500CF5AC5 /* AppDelegate.m in Sources */,
 				E278E1D31F20A93500CF5AC5 /* main.m in Sources */,
+				E278E2061F20AAF300CF5AC5 /* UIFont+HJFont.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,9 +443,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7Z578RDKM6;
 				INFOPLIST_FILE = HJTools/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dunyun.HJTools;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -441,9 +457,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7Z578RDKM6;
 				INFOPLIST_FILE = HJTools/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dunyun.HJTools;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
