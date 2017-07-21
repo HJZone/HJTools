@@ -16,6 +16,7 @@
 		E278E1EC1F20A93500CF5AC5 /* HJToolsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E278E1EB1F20A93500CF5AC5 /* HJToolsTests.m */; };
 		E278E1F71F20A93500CF5AC5 /* HJToolsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E278E1F61F20A93500CF5AC5 /* HJToolsUITests.m */; };
 		E278E2061F20AAF300CF5AC5 /* UIFont+HJFont.m in Sources */ = {isa = PBXBuildFile; fileRef = E278E2051F20AAF300CF5AC5 /* UIFont+HJFont.m */; };
+		E278E2121F21A39C00CF5AC5 /* NSDate+HJDate.m in Sources */ = {isa = PBXBuildFile; fileRef = E278E2111F21A39C00CF5AC5 /* NSDate+HJDate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		E278E1F81F20A93500CF5AC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E278E2041F20AAF300CF5AC5 /* UIFont+HJFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIFont+HJFont.h"; path = "HJFont/UIFont+HJFont.h"; sourceTree = "<group>"; };
 		E278E2051F20AAF300CF5AC5 /* UIFont+HJFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIFont+HJFont.m"; path = "HJFont/UIFont+HJFont.m"; sourceTree = "<group>"; };
+		E278E2101F21A39C00CF5AC5 /* NSDate+HJDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDate+HJDate.h"; path = "HJDate/NSDate+HJDate.h"; sourceTree = "<group>"; };
+		E278E2111F21A39C00CF5AC5 /* NSDate+HJDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDate+HJDate.m"; path = "HJDate/NSDate+HJDate.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +111,7 @@
 				E278E1D51F20A93500CF5AC5 /* AppDelegate.m */,
 				E278E1D71F20A93500CF5AC5 /* ViewController.h */,
 				E278E1D81F20A93500CF5AC5 /* ViewController.m */,
+				E278E2131F21A3A000CF5AC5 /* HJDate */,
 				E278E2071F20AAF900CF5AC5 /* HJFont */,
 				E278E1DA1F20A93500CF5AC5 /* Main.storyboard */,
 				E278E1DD1F20A93500CF5AC5 /* Assets.xcassets */,
@@ -151,6 +155,15 @@
 				E278E2051F20AAF300CF5AC5 /* UIFont+HJFont.m */,
 			);
 			name = HJFont;
+			sourceTree = "<group>";
+		};
+		E278E2131F21A3A000CF5AC5 /* HJDate */ = {
+			isa = PBXGroup;
+			children = (
+				E278E2101F21A39C00CF5AC5 /* NSDate+HJDate.h */,
+				E278E2111F21A39C00CF5AC5 /* NSDate+HJDate.m */,
+			);
+			name = HJDate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,6 +302,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E278E2121F21A39C00CF5AC5 /* NSDate+HJDate.m in Sources */,
 				E278E1D91F20A93500CF5AC5 /* ViewController.m in Sources */,
 				E278E1D61F20A93500CF5AC5 /* AppDelegate.m in Sources */,
 				E278E1D31F20A93500CF5AC5 /* main.m in Sources */,
@@ -534,6 +548,7 @@
 				E278E1FD1F20A93500CF5AC5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E278E1FE1F20A93500CF5AC5 /* Build configuration list for PBXNativeTarget "HJToolsTests" */ = {
 			isa = XCConfigurationList;
@@ -542,6 +557,7 @@
 				E278E2001F20A93500CF5AC5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E278E2011F20A93500CF5AC5 /* Build configuration list for PBXNativeTarget "HJToolsUITests" */ = {
 			isa = XCConfigurationList;
@@ -550,6 +566,7 @@
 				E278E2031F20A93500CF5AC5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

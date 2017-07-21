@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "NSDate+HJDate.h"
 
 @interface ViewController ()
 
@@ -16,6 +17,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    NSLog(@"weekday : %@",[NSDate getWeekdayWithDate:[NSDate changeDateStringToDate:@"2017-07-24" withDateStringFormat:@"YYYY-MM-dd"]]);
     // Do any additional setup after loading the view, typically from a nib.
 }
 
