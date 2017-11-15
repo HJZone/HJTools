@@ -37,23 +37,24 @@
         method_exchangeImplementations(newMethod1, method1);
         
         
-        
         Method method2 = class_getClassMethod([self class], @selector(fontWithName:size:));
-        
-        /** 获取自定义的hj_systemFontOfSize方法 */
         Method newMethod2 = class_getClassMethod([self class], @selector(hj_fontWithName:size:));
-        
-        /** 交换方法 */
         method_exchangeImplementations(newMethod2, method2);
+        
+        Method method3 = class_getClassMethod([self class], @selector(boldSystemFontOfSize:));
+        Method newMethord3 =class_getClassMethod([self class], @selector(hj_boldSystemFontOfSize:));
+        method_exchangeImplementations(newMethord3, method3);
+        
+        Method method4 = class_getClassMethod([self class], @selector(italicSystemFontOfSize:));
+        Method newMethord4 =class_getClassMethod([self class], @selector(hj_italicSystemFontOfSize:));
+        method_exchangeImplementations(newMethord4, method4);
         
     });
     
 }
 
-
-+ (UIFont *)hj_systemFontOfSize:(CGFloat)fontSize
++ (CGFloat)getScale
 {
-    
     float a = [UIScreen mainScreen].bounds.size.width/REFERENCE_W;
     float b = [UIScreen mainScreen].bounds.size.height/REFERENCE_H;
     
@@ -69,40 +70,64 @@
     
     
     
-    if (a > 1) {
+    if (a >= 1) {
         scale = a > b ? b : a;
     }
     else
     {
         scale = a < b ? b : a;
     }
-    
+    return scale;
+}
+
+
+/**
+ system font
+
+ @param fontSize size
+ @return font
+ */
++ (UIFont *)hj_systemFontOfSize:(CGFloat)fontSize
+{
+    CGFloat scale = [self getScale];
     return [UIFont hj_systemFontOfSize:fontSize * scale];
 }
 
+/**
+ set system font with name
+
+ @param fontName font name
+ @param fontSize font size
+ @return font
+ */
 + (UIFont *)hj_fontWithName:(NSString *)fontName size:(CGFloat)fontSize
 {
-    float a = [UIScreen mainScreen].bounds.size.width/REFERENCE_W;
-    float b = [UIScreen mainScreen].bounds.size.height/REFERENCE_H;
-    
-    a = a > maxScale ? maxScale : a;
-    b = b > maxScale ? maxScale : b;
-    
-    
-    a = a > minScale ? a : minScale;
-    b = b > minScale ? b : minScale;
-    
-    CGFloat scale;
-    
-    if (a > 1) {
-        scale = a > b ? b : a;
-    }
-    else
-    {
-        scale = a < b ? b : a;
-    }
-    
+    CGFloat scale = [self getScale];
     return [UIFont hj_fontWithName:fontName size:fontSize * scale];
+}
+
+/**
+ 粗体
+
+ @param fontSize font size
+ @return font
+ */
++ (UIFont *)hj_boldSystemFontOfSize:(CGFloat)fontSize
+{
+    CGFloat scale = [self getScale];
+    return [UIFont hj_boldSystemFontOfSize:fontSize*scale];
+}
+
+/**
+ 斜体
+
+ @param fontSize font size
+ @return font
+ */
++ (UIFont *)hj_italicSystemFontOfSize:(CGFloat)fontSize
+{
+    CGFloat scale = [self getScale];
+    return [UIFont hj_italicSystemFontOfSize:fontSize*scale];
 }
 
 
