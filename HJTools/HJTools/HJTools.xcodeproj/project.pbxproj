@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3371B90A2017254C005A85FD /* UIView+HJCornerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3371B9092017254C005A85FD /* UIView+HJCornerView.m */; };
+		33D5E53D20144989007C1628 /* HJTextFieldView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D5E53C20144989007C1628 /* HJTextFieldView.m */; };
 		E278E1D31F20A93500CF5AC5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E278E1D21F20A93500CF5AC5 /* main.m */; };
 		E278E1D61F20A93500CF5AC5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E278E1D51F20A93500CF5AC5 /* AppDelegate.m */; };
 		E278E1D91F20A93500CF5AC5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E278E1D81F20A93500CF5AC5 /* ViewController.m */; };
@@ -37,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3371B9082017254C005A85FD /* UIView+HJCornerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+HJCornerView.h"; sourceTree = "<group>"; };
+		3371B9092017254C005A85FD /* UIView+HJCornerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+HJCornerView.m"; sourceTree = "<group>"; };
+		33D5E53B20144989007C1628 /* HJTextFieldView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HJTextFieldView.h; sourceTree = "<group>"; };
+		33D5E53C20144989007C1628 /* HJTextFieldView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HJTextFieldView.m; sourceTree = "<group>"; };
 		E278E1CE1F20A93500CF5AC5 /* HJTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HJTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E278E1D21F20A93500CF5AC5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E278E1D41F20A93500CF5AC5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -84,6 +90,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3371B90720172544005A85FD /* HJCornerView */ = {
+			isa = PBXGroup;
+			children = (
+				3371B9082017254C005A85FD /* UIView+HJCornerView.h */,
+				3371B9092017254C005A85FD /* UIView+HJCornerView.m */,
+			);
+			path = HJCornerView;
+			sourceTree = "<group>";
+		};
+		33D5E53A20144966007C1628 /* HJTextFieldView */ = {
+			isa = PBXGroup;
+			children = (
+				33D5E53B20144989007C1628 /* HJTextFieldView.h */,
+				33D5E53C20144989007C1628 /* HJTextFieldView.m */,
+			);
+			path = HJTextFieldView;
+			sourceTree = "<group>";
+		};
 		E278E1C51F20A93500CF5AC5 = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +135,8 @@
 				E278E1D51F20A93500CF5AC5 /* AppDelegate.m */,
 				E278E1D71F20A93500CF5AC5 /* ViewController.h */,
 				E278E1D81F20A93500CF5AC5 /* ViewController.m */,
+				3371B90720172544005A85FD /* HJCornerView */,
+				33D5E53A20144966007C1628 /* HJTextFieldView */,
 				E278E2131F21A3A000CF5AC5 /* HJDate */,
 				E278E2071F20AAF900CF5AC5 /* HJFont */,
 				E278E1DA1F20A93500CF5AC5 /* Main.storyboard */,
@@ -304,7 +330,9 @@
 			files = (
 				E278E2121F21A39C00CF5AC5 /* NSDate+HJDate.m in Sources */,
 				E278E1D91F20A93500CF5AC5 /* ViewController.m in Sources */,
+				33D5E53D20144989007C1628 /* HJTextFieldView.m in Sources */,
 				E278E1D61F20A93500CF5AC5 /* AppDelegate.m in Sources */,
+				3371B90A2017254C005A85FD /* UIView+HJCornerView.m in Sources */,
 				E278E1D31F20A93500CF5AC5 /* main.m in Sources */,
 				E278E2061F20AAF300CF5AC5 /* UIFont+HJFont.m in Sources */,
 			);
